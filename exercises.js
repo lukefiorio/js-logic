@@ -176,7 +176,16 @@ console.log('notEqual(==)', notEqual('fail','fail'));
  * Console.log your result.
 */ 
 
+function spareChange(money) {
+  if (money>100) {
+    return true
+  } else {
+    return false
+  }
+}
 
+console.log('have money(y):',spareChange(105));
+console.log('have money(n):',spareChange(100));
 
 /*
  * #9
