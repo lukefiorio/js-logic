@@ -17,8 +17,8 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
   return "Get back to coding!";
 };*/
 
-console.log('hello');
-console.log('good bye');
+//console.log('hello');
+//console.log('good bye');
 
 /*
  * #1
@@ -36,7 +36,7 @@ function canVote(age) {
     return true
   }
 }
-console.log(canVote(18));
+console.log('canVote:', canVote(18));
 
 /*
  * #2
@@ -51,11 +51,11 @@ console.log(canVote(18));
 */
 
 function login(password) {
-  if (password = 'test1234') {
+  if (password === 'test1234') {
     return 'Login Success!';
   }
 }
-console.log(login('test1234'));
+console.log('login:', login('test1234'));
 
 /*
  * #3
@@ -75,8 +75,8 @@ function isGreaterThan(first,second) {
     return true;
   }
 }
-console.log(isGreaterThan(4,2));
-console.log(isGreaterThan(1,3));
+console.log('is GT:', isGreaterThan(4,2));
+//console.log(isGreaterThan(1,3));
 
 /*
  * #4
@@ -90,7 +90,12 @@ console.log(isGreaterThan(1,3));
  * Console.log your result.
 */
 
-
+function mustBeTrue(boo) {
+  if (boo===true) {
+    return true;
+  }
+}
+console.log('mustBeTrue:', mustBeTrue(true));
 
 /*
  * #5
