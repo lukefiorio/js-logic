@@ -109,7 +109,13 @@ console.log('mustBeTrue:', mustBeTrue(true));
  * Console.log your result.
 */
 
-
+function bigBird(word) {
+  if (word.length===3) {
+    return 'Word to Big Bird!';
+  }
+}
+console.log('bigBird (3):', bigBird('cat'));
+console.log('bigBird (4):', bigBird('deer'));
 
 /*
  * #6
