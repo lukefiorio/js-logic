@@ -130,6 +130,16 @@ console.log('bigBird (4):', bigBird('deer'));
  * Console.log your result.
 */
 
+function isEqual(first,second) {
+  if (first===second) {
+    return 'You look marvelous!'
+  } else {
+    return "I don't know who you are anymore."
+  }
+}
+console.log('isEqual(==):', isEqual('test','test'));
+console.log('isEqual(!=):',isEqual('test','fail'));
+
 
 /*
  * #7
