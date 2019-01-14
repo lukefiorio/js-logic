@@ -313,6 +313,24 @@ console.log('train:',moneyTrain(100));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 25;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut() {
+  budget = budget - doughnutPrice;
+  doughnutBought = doughnutBought + 1;
+}
+
+console.log('init bud:',budget);
+console.log('init cnt:',doughnutBought);
+buyDoughnut();
+console.log('bud (1):',budget);
+console.log('donut (1):',doughnutBought);
+buyDoughnut();
+console.log('bud (2):',budget);
+console.log('donut (2):',doughnutBought);
+
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
