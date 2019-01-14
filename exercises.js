@@ -404,6 +404,10 @@ for (var j = 1; j<=5; j++) {
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for (var k = 0; k<myFavFoods.length;k++) {
+  console.log('foods:',myFavFoods[k]);
+}
+
 
 /*
  * #17
