@@ -222,8 +222,15 @@ console.log("sumTo30+:",dirty30(12,13,3));
  * Console.log your result.
 */ 
 
-
-
+function evenStevens (num) {
+  if (num % 2===0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log('even:',evenStevens(6002));
+console.log('even:',evenStevens(6003));
 
 /*
  * #11
