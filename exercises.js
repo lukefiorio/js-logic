@@ -424,6 +424,16 @@ for (var k = 0; k<myFavFoods.length;k++) {
  * Console.log your result.
 */
 
+var numArray = [5,23,6,43,1];
+var total = 0;
+
+function sumItUp (arr) {
+  for (elem = 0; elem<numArray.length; elem++) {
+    total = total + numArray[elem];
+  }
+  return total
+}
+console.log('sum loop:',sumItUp(numArray));
 
 
 /*
