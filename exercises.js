@@ -482,6 +482,20 @@ console.log('west:',west);
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways(special) {
+  var newArray = []
+  for (y=0; y<subOftheDay.length; y ++) {
+    if (y % 2 ===0) {
+      newArray.push(subOftheDay[y]);
+    } else if (y % 2 !==0) {
+      newArray.push("Classic Tuna");
+    }
+  }
+  return newArray;
+}
+
+console.log('new sub spc:',subways(subOftheDay));
+
 
 /*
 Final Boss
