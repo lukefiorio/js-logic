@@ -393,9 +393,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
-var players = 'Player: ';
+var pl = 'Player: ';
 for (var j = 1; j<=5; j++) {
-  console.log(players+j);
+  console.log(pl+j);
 }
 
 /* 
@@ -449,6 +449,25 @@ console.log('sum loop:',sumItUp(numArray));
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var east = [];
+var west = [];
+
+function allStars(ballers) {
+  for (x = 0; x<players.length; x++) {
+    if (x % 2 ===0) {
+      east.push(ballers[x]);
+    } else if (x % 2 !==0) {
+      west.push(ballers[x]);
+    }
+  }
+}
+
+allStars(players);
+console.log('players:',players);
+console.log('east:',east);
+console.log('west:',west);
+
+
 /*
  * #19
  * Function - subways
