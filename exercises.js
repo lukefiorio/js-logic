@@ -335,6 +335,34 @@ console.log('donut (2):',doughnutBought);
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
+function dailySpecials (special) {
+  switch(special) {
+    case 'Sunday':
+    return 'Sloppy Joe';
+    break;
+    case 'Monday':
+    return 'BBQ & slaw';
+    break;
+    case 'Tuesday':
+    return 'Pulled Pork';
+    break;
+    case 'Wednesday':
+    return 'Beef Briscuit';
+    break;
+    case 'Thursday':
+    return 'Turkey sammich';
+    break;
+    case 'Friday':
+    return 'Baby-back ribs';
+    break;
+    case 'Saturday':
+    return 'Black bean stew';
+    break;
+    default:
+    return 'Pick a real day of the week, buddy!';
+  }
+}
+console.log('special:',dailySpecials('Friday'));
 
 
 /*
