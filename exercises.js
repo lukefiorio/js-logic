@@ -375,12 +375,13 @@ The for loop is made up for 3 parts:
 3) Update (i.e. i++)
 */
 
+/*
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
 for (var i = 0; i<toyotaModels.length; i++){
    console.log("Toyota " + toyotaModels[i]);
 }
-
+*/
 
 /* 
  * #15
@@ -392,6 +393,10 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var players = 'Player: ';
+for (var j = 1; j<=5; j++) {
+  console.log(players+j);
+}
 
 /* 
  * #16
