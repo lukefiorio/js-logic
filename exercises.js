@@ -201,7 +201,14 @@ console.log('have money(n):',spareChange(100));
  * Console.log your result.
 */ 
 
-
+function dirty30 (one,two,three) {
+  if (one+two+three>30) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log("sumTo30+:",dirty30(12,13,3));
 
 /*
  * #10
