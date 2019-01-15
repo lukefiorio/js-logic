@@ -472,12 +472,12 @@ console.log('sum loop:',sumItUp(numArray));
  * Console.log both the east and west arrays.
 */ 
 
-var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var players = ["Yao Ming", "BrookLin", "Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
 var east = [];
 var west = [];
 
 function allStars(ballers) {
-  for (x = 0; x<players.length; x++) {
+  for (x = 0; x<ballers.length; x++) {
     if (x % 2 ===0) {
       east.push(ballers[x]);
     } else if (x % 2 !==0) {
