@@ -556,8 +556,18 @@ function removeLetter(str) {
   return newStr
 }
 
-console.log("rmv 'a':",removeLetter(phrase));
+function removeLetter2(str) {
+  var newStr =''
+  for (z = 0; z < str.length; z++) {
+   if (str.charAt(z) !== 'a' && str.charAt(z) !== 'A') {
+     newStr=newStr + str.charAt(z);
+   }
+  }
+  return newStr
+}
 
+console.log("rmv 'a':",removeLetter(phrase));
+console.log("rmv 'a':",removeLetter2(phrase));
 
 
 
