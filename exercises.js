@@ -452,8 +452,8 @@ var numArray = [5,23,6,43,1];
 var total = 0;
 
 function sumItUp (arr) {
-  for (elem = 0; elem<numArray.length; elem++) {
-    total = total + numArray[elem];
+  for (i = 0; i<arr.length; i++) {
+    total = total + arr[i];
   }
   return total
 }
