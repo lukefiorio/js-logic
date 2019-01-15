@@ -508,9 +508,9 @@ console.log('west:',west);
 
 function subways(special) {
   var newArray = []
-  for (y=0; y<subOftheDay.length; y ++) {
+  for (y=0; y<special.length; y ++) {
     if (y % 2 ===0) {
-      newArray.push(subOftheDay[y]);
+      newArray.push(special[y]);
     } else if (y % 2 !==0) {
       newArray.push("Classic Tuna");
     }
@@ -518,9 +518,18 @@ function subways(special) {
   return newArray;
 }
 
+function subway2(special) {
+  for (i=0; i<special.length; i++) {
+    if (i % 2 !==0) {
+      special.splice(i,1,"Classic Tuna");
+    }
+  }
+  return special
+}
+
+
 console.log('new sub spc:',subways(subOftheDay));
-
-
+console.log('new sub spc:',subway2(subOftheDay));
 /*
 Final Boss
  * #20
