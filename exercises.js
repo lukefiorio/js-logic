@@ -313,39 +313,47 @@ console.log('train:',moneyTrain(100));
  * Console.log budget and doughnutBought again.
 */ 
 
-var budget = 25;
+var initBudget = 25;
+var budget = initBudget;
 var doughnutPrice = 4;
 var doughnutBought = 0;
 
 function buyDoughnut() {
   if (budget >= doughnutPrice) {
-    budget = budget - doughnutPrice;
-    doughnutBought = doughnutBought + 1;
+    budget -=doughnutPrice;
+    doughnutBought +=1;
   } else {
-    return 'No more money left in your budget!';
+    budget = '<$'+doughnutPrice+'...sorry!';
+    doughnutBought = Math.floor(initBudget/doughnutPrice) +'... same as last time!'
   }
 }
 
 console.log('init bud:',budget);
 console.log('init cnt:',doughnutBought);
-console.log(buyDoughnut());
 buyDoughnut();
 console.log('bud (1):',budget);
 console.log('donut (1):',doughnutBought);
-console.log(buyDoughnut());
 buyDoughnut();
 console.log('bud (2):',budget);
 console.log('donut (2):',doughnutBought);
-console.log(buyDoughnut());
 buyDoughnut();
 console.log('bud (3):',budget);
 console.log('donut (3):',doughnutBought);
-console.log(buyDoughnut());
 buyDoughnut();
 console.log('bud (4):',budget);
 console.log('donut (4):',doughnutBought);
-console.log(buyDoughnut());
-
+buyDoughnut();
+console.log('bud (5):',budget);
+console.log('donut (5):',doughnutBought);
+buyDoughnut();
+console.log('bud (6):',budget);
+console.log('donut (6):',doughnutBought);
+buyDoughnut();
+console.log('bud (7):',budget);
+console.log('donut (7):',doughnutBought);
+buyDoughnut();
+console.log('bud (8):',budget);
+console.log('donut (8):',doughnutBought);
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
