@@ -558,12 +558,12 @@ function removeLetter(str) {
 
 function removeLetter2(str) {
   var newStr =''
-  for (z = 0; z < str.length; z++) {
-   if (str.charAt(z) !== 'a' && str.charAt(z) !== 'A') {
-     newStr=newStr + str.charAt(z);
+  for (var i = 0; i < str.length; i++) {
+   if (str.charAt(i) !== 'a' && str.charAt(i) !== 'A') {
+     newStr=newStr + str.charAt(i);
    }
   }
-  return newStr
+  return newStr.split('');
 }
 
 console.log("rmv 'a':",removeLetter(phrase));
